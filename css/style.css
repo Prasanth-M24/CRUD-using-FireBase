@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+}
+
+#frm{
+    margin: auto;
+    width: 30vw;
+    min-width: 300px;
+    display: grid;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    /* box-shadow: 5px 5px 5px 1px rgb(195, 106, 236); */
+    border-radius: 5px;
+}
+#frm .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#frm .form-group label{
+    font-weight: 500;
+}
+
+#frm .form-group input{
+    height: 30px;
+    padding: 10px 8px;
+    border: none;
+    outline: none;
+    /* border-bottom: 1px solid gray; */
+    background-color: #f7f7f7;
+}
+
+#frm button{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+table{
+    width: 80%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+table td,
+table th {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+table th{
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    border: 1px solid black;
+}
+table td{
+    font-weight: 450;
+}
+table td button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.name-error, .age-error, .city-error{
+    font-size: 10px;
+    color: red;
+}
+.btn-delete i{
+    pointer-events: none;
+}
+
+.btn-edit i{
+    pointer-events: none;
+}

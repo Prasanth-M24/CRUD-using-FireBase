@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CRUD application</title>
+</head>
+<body>
+    <h3>CRUD App with FireBase</h3>
+    <form action="" id="frm">
+        <input type="hidden" id="id">
+        <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" id="name" placeholder="Enter your Full Name">
+            <span class="name-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your Age">
+            <span class="age-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="city" >City</label>
+            <input type="text" id="city" placeholder="Enter your City">
+            <span class="city-error"></span>
+        </div>
+        <button type="submit" class="btn"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+    </form>
+
+    <table>
+        <thead>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tblbody">
+            <!-- <tr>
+                <td>1</td>
+                <td>Prasanth</td>
+                <td>19</td>
+                <td>Mettur</td>
+                <td><button class="btn-edit"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                <td><button class="btn-delete"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Srikanth</td>
+                <td>21</td>
+                <td>Mettur</td>
+                <td><button class="btn-edit"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                <td><button class="btn-delete"><i class="fa-solid fa-trash"></i></button></td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <script src="js/script.js" type="module"></script>
+    
+</body>
+</html>
